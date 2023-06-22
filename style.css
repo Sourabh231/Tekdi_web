@@ -4,6 +4,11 @@ body{
 .logo-img{
   width: 85px;
 }
+
+.logo{
+  position: relative;
+  bottom: 20px;
+}
 .main-container{
   background-image: url('./Images/bg-home.jpg');
   background-repeat: no-repeat;
