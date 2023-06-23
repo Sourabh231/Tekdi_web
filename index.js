@@ -1,21 +1,13 @@
-// var navbar = document.querySelector('.nav-bar-container')
-
-// window.onscroll = function() {
-
-//   // pageYOffset or scrollY
-//   if (window.pageYOffset > 0) {
-//     navbar.classList.add('scrolled')
-//   } else {
-//     navbar.classList.remove('scrolled')
-//   }
-// }
 
 window.addEventListener('scroll', function() {
   var navbar = document.querySelector('.nav-bar-container');
+  var logoImg = document.querySelector('.logo-img');
   if (window.scrollY > 0) {
     navbar.classList.add('scrolled');
+    logoImg.src = './Images/logo_tekdi.png'
   } else {
     navbar.classList.remove('scrolled');
+    logoImg.src = './Images/main-logo.png'; // Reset the logo image source
   }
 });
 
