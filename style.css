@@ -22,9 +22,11 @@ body{
   align-items: center;
   padding: 0rem 25rem;
   width: 100%;
+  z-index: 100%;
   position: fixed;
-  top: 5;
+  top: 0;
   background-color: transparent; 
+  transition: background-color 0.5s ease;
 }
 
 .nav-bar-container.scrolled {
@@ -38,11 +40,19 @@ body{
   color: black; /* Change menu item color when scrolled */
 }
 
+
 /* Additional CSS for menu item hover effect */
 
 /* .nav-bar-container.scrolled .nav-btns li a:hover {
   color: gray; /* Change menu item hover color when scrolled 
 } */
+
+.all-contain {
+  margin-top: 80px; /* Adjust this value to match the height of your navbar */
+  position: relative;
+  z-index: 1;
+}
+
 .nav-bar{
   display: flex;
 }
