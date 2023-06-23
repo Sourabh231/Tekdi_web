@@ -30,6 +30,7 @@ body{
 .nav-bar-container.scrolled {
   /* background color when scrolled */
   background-color: white;
+  height: 94px;
   /* other CSS styles */
 }
 
