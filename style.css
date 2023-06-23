@@ -24,9 +24,24 @@ body{
   width: 100%;
   position: fixed;
   top: 5;
-
+  background-color: transparent; 
 }
 
+.nav-bar-container.scrolled {
+  /* background color when scrolled */
+  background-color: white;
+  /* other CSS styles */
+}
+
+.nav-bar-container.scrolled .nav-btns li a {
+  color: black; /* Change menu item color when scrolled */
+}
+
+/* Additional CSS for menu item hover effect */
+
+/* .nav-bar-container.scrolled .nav-btns li a:hover {
+  color: gray; /* Change menu item hover color when scrolled 
+} */
 .nav-bar{
   display: flex;
 }
@@ -36,6 +51,7 @@ body{
 .nav-btns{
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
 }
 .nav-btns>li{
   list-style: none;
@@ -44,11 +60,15 @@ body{
 }
 .nav-border{
   background-color: #ffffff;
-    width: 60%;
-    margin: auto;
-    position: relative;
-    top: 13%;
+  width: 204%;
+  margin: auto;
+  position: relative;
+  right: 35rem;
+  top: 1rem;
 }
+
+
+
 .page-title{
   display: flex;
     flex-direction: column-reverse;
